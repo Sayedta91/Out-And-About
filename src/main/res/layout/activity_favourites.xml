@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/txt"
+        android:padding="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:text="Favourite List" />
+
+
+
+    <Button
+        android:id="@+id/btnFavesMap"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:text="See Your favourites on map" />
+
+    <ListView
+        android:id="@+id/favesList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/txt"
+
+        android:layout_above="@+id/btnFavesMap"
+        android:divider="@color/colorPrimary"
+        android:dividerHeight="2dp"
+        android:drawSelectorOnTop="true"
+        android:footerDividersEnabled="false"
+        android:padding="10dp"
+        android:scrollbarStyle="outsideOverlay" >
+
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <WebView
+        android:id="@+id/placeDetailsWebView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:layout_above="@+id/btnsetFav" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="@string/setAsFav"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimary"
+        android:id="@+id/btnsetFav"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="25dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Share"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimary"
+        android:id="@+id/btnShare"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/btnsetFav"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="30dp" />
+</RelativeLayout>
